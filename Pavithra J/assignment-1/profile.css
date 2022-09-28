@@ -28,8 +28,7 @@
     margin: auto;
     margin-top: 2%;
     box-shadow:  5px 10px 18px #888888;
-    padding: 8px;
-    
+    padding: 8px;    
 }
 .col{
     margin-top: 30px;     
@@ -54,7 +53,7 @@
 body{
     background-color: #F8F8FF;
 }
-.about h1{
+.about h1,h3{
     font-family: system-ui;
     font-weight:lighter;   
 }
@@ -65,32 +64,27 @@ body{
 .about{
    background-color: #FFFFFF; 
    margin-top: 10px;
-   margin-left: 20px;
-   
-   
+   margin-left: 20px;  
 }
 .con1{
     display: flex;
-    
     background-color: #FFFFFF;
     margin-top: 10px;
     box-shadow:  5px 10px 18px #888888;
     height: auto;
+    font-family: system-ui;
+    font-weight: lighter;
 }
 #tb1 td{
     padding: 5px;
     width: 70px;
-    font-family: system-ui;
-    font-weight: lighter;
-
 }
 #tb2 td{
     padding: 10px;
     width: 150px;
+}
+.content{
     font-family: system-ui;
     font-weight: lighter;
 }
-#progress{
-    font-family: system-ui;
-    font-weight: lighter;
-}
+
