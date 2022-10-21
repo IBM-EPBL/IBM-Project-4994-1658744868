@@ -33,6 +33,7 @@ def register():
     query = "SELECT * FROM USER WHERE email=? OR rollNo=?"
     stmt = ibm_db.prepare(conn, query)
     ibm_db.bind_param(stmt,1,email)
+    
     ibm_db.bind_param(stmt,2,rollNo)
     ibm_db.execute(stmt)
     isUser = ibm_db.fetch_assoc(stmt)
