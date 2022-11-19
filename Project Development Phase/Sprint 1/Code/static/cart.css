@@ -1,0 +1,111 @@
+#tableItems {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#itemImage {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	float: left;
+}
+
+#itemName {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	width: 200px;
+	float: left;
+}
+
+#titleName {
+	width: 200px;
+	float: left;
+}
+
+#titlePrice {
+	float: left;
+}
+
+#itemPrice {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	height: 100px;
+	display: inline-block;
+}
+
+#image {
+	height: 100px;
+	width: 80px;
+}
+
+#seperator {
+	margin: 0px;
+	max-width: 400px;
+}
+
+#total {
+	padding-left: 280px;
+}
+
+#itemNameTag {
+	font-weight: bold;
+}
+
+#subtotal {
+	font-weight: bold;
+	font-size: 20px;
+}
+#cartItems{
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: whitesmoke;
+}
+.shoppingcartText{
+	color:rgb(0, 0, 0);
+	font-size:xx-large;
+	font-family: system-ui;
+	font-weight: lighter;
+	letter-spacing: 4px;
+	text-align: center;
+}
+.removebutton{
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 8px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 10px;
+  }
+  body{
+	font-family: system-ui;
+	font-weight: lighter;
+	letter-spacing: 3px;
+  }
