@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Welcome</title>
+<link rel="stylesheet" href="static/home.css">
+<link rel="stylesheet" href="static/topStyle.css" />
+</head>
+<body>
+    <div id="title">
+        <a href="/"><img src="static/uploads/trendzylogo.png" width="60px" id="logo"></a>
+        <form>
+            <h1 id="cname">TRENDZY</h1>
+        </form>
+        
+        {% if not loggedIn %}
+    <div id="signInButton">
+        <a class="link" href="/loginForm">Sign In</a>
+    </div>
+    {% else %}
+    <div class="dropdown" id="signInButton">
+        <button class="dropbtn">Hello,{{firstName}}</button>
+        <div class="dropdown-content">
+            <a href="/logout">Sign Out</a>
+        </div>
+    </div>
+    {% endif %}
+    <div id="kart">
+        <a class="link" href="/cart">
+            <img src="static/uploads/cart.png" id="cartIcon" />
+            CART {{noOfItems}}
+        </a>
+    </div>
+    </div>
+    <div class="homeimage">
+        <div id="text">
+            <h1 id="inside">World's Leading Fashion Community<br>TrendZy</h1>   
+        </div>
+    </div>
+    <div id="freeship">
+        <h5>FREE SHIPPING AROUND THE WORLD</h5>
+    </div>
+<div class="display">
+    <div class="displayCategory">
+        <h2 id="shopbycategory">Shop By Category</h2>
+            <table>
+                <tr>
+                    {% for row in categoryData %}
+                    <td><a href="/displayCategory?categoryId={{row[0]}}" id="categories">{{row[1]}}</a></td>
+                    {% endfor %}
+                </tr>
+            </table>
+    </div>
+</div>
+<h2 id="dealheader">Deal of the Day</h2>
+<div id="deals">
+    <div id="watches">
+        <h2 id="imagetext">25% off on Axis Bank Debit Cards<br>Apple Watches</h2>
+    </div>
+    <div id="airpods">
+        <h3 id="imagetext">AirPods<br>ONLY ₹9000</h3>
+    </div>
+    <div id="laptops">
+        <h3 id="imagetext">Hp Pavillion New Launch!<br>Core i5 11th gen Processors</h3>
+    </div>
+    <div id="iphones">
+        <h3 id="imagetext">Now or never Offer!<br>Iphones at ₹60000</h3>
+    </div>
+</div>
+<br>
+
+<div id="bot">
+    <h2>Need Assistance in choosing what's best for you?<br>Chat with our QueenBee!</h2>
+    <img src="static/uploads/chatbot.webp" width="200px">
+</div>
+<div id="about">
+    <h1>About Us</h1>
+    <p>TrendZy is an International website. Explore and browse all the latest collections: handbags, leather goods, ready to wear, shoes, jewellery</p>
+    <p>For Queries : trendzy@hotmail.com</p>
+    <p>No: 9999999999</p>
+    <img src="static/uploads/aboutlogo.jpeg" width="110px">
+</div>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "ba2316ec-e598-43e0-889a-b0dbebf9a363", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "1d7826e9-10ef-4a8d-9687-b17a98a71b25", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
+

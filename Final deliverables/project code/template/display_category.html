@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Category: {{categoryName}}</title>
+<link rel="stylesheet" href="static/home.css" />
+<link rel="stylesheet" href="static/topStyle.css" />
+</head>
+<body>
+    <div id="title">
+        {% Block Head %} {% End Block %}
+    </div>
+<div>
+    <h2 id="shopbycategory">Explore Category : {{categoryName}}</h2>
+    {% for itemData in data %}
+    <table>
+        <tr id="productName">
+            {% for row in itemData %}
+            <td>
+                {{row[1]}}
+            </td>
+            {% endfor %}
+        </tr>
+        <tr id="productImage">
+            {% for row in itemData %}
+            <td>
+                <a href="/productDescription?productId={{row[0]}}">
+                    <img src={{ url_for('static', filename='uploads/' + row[3]) }} id="itemImage" />
+                </a>
+            </td>
+            {% endfor %}
+        </tr>
+        <tr id="productPrice">
+            {% for row in itemData %}
+            <td>
+                ${{row[2]}}
+            </td>
+            {% endfor %}
+        </tr>
+    </table>
+    {% endfor %}
+    
+</div>
+</body>
+</html>
