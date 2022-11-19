@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Product Description</title>
+<link rel="stylesheet" href="static/productDescription.css">
+<link rel="stylesheet" href="static/topStyle.css">
+
+</head>
+<body>
+	<div id="title">
+		<a href="/"><img src="static/uploads/trendzylogo.png" width="60px" id="logo"></a>
+		<form>
+			<h1 id="cname">TRENDZY</h1>
+		</form>
+		
+		{% if not loggedIn %}
+	<div id="signInButton">
+		<a class="link" href="/loginForm">Sign In</a>
+	</div>
+	{% else %}
+	<div class="dropdown" id="signInButton">
+		<button class="dropbtn">Hello,{{firstName}}</button>
+		<div class="dropdown-content">
+			<a href="/logout">Sign Out</a>
+		</div>
+	</div>
+	{% endif %}
+	<div id="kart">
+		<a class="link" href="/cart">
+			<img src="static/uploads/cart.png" id="cartIcon" />
+			CART {{noOfItems}}
+		</a>
+	</div>
+	</div>
+
+<div id="display">
+	<div id="productName">
+		<h1 class="titles">Product name : {{data[1]}}</h1>
+	</div>
+	<div>
+		<img src={{url_for('static', filename='uploads/'+data[4]) }} id="productImage"/>
+	</div>
+
+	<div id="productDescription">
+		<h2 class="titles">Details</h2>
+		<table id="descriptionTable">
+			<tr>
+				<td>Name :</td>
+				<td>{{data[1]}}</td>
+			</tr>
+			<tr>
+				<td>Price :</td>
+				<td>${{data[2]}}</td>
+			</tr>
+			<tr>
+				<td>Stock :</td>
+				<td>{{data[5]}}</td>
+			</tr>
+		</table>
+		<h2 class="titles">Description</h2>
+		<p>{{data[3]}}</p>
+	</div>
+	<div id="addToCart">
+		<a href="/addToCart?productId={{request.args.get('productId')}}" id="addtocart">Add to Cart</a>
+	</div>
+</div>
+</body>
+</html>
