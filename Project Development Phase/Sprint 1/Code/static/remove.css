@@ -1,0 +1,14 @@
+table {
+	border-width: 10px;
+	text-align: center;
+	display:list-item;
+}
+
+#itemImage {
+	height: 100px;
+	width: 80px;
+}
+
+body{
+	width: 100%;
+}
