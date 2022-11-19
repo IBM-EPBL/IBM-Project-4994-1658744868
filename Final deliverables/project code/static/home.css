@@ -1,0 +1,154 @@
+#itemImage {
+	height: 200px;
+	width: 150px;
+}
+
+.display {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#shopbycategory{
+	text-align: center;
+	font-family: system-ui;
+	letter-spacing: 4px;
+	font-weight: lighter;
+}
+
+#watches{
+	background-image: url("uploads/watch.jpg");
+	background-size: cover;
+	width: 18%;
+	height: 200px;
+	padding:10px 25px;
+	border: 8px solid gainsboro ;
+}
+#airpods{
+	background-image: url("uploads/airpods.webp");
+	background-size: cover;
+	width: 18%;
+	height: 200px;
+	padding:10px 25px;
+	border: 8px solid rgb(235, 234, 234);
+	
+}
+#laptops{
+	background-image: url("uploads/laptop.jpeg");
+	background-size: cover;
+	width: 18%;
+	height: 200px;
+	padding:10px 25px;
+	border: 8px solid rgb(235, 234, 234);
+
+}
+#iphones{
+	background-image: url("uploads/iphone.jpeg");
+	background-size: cover;
+	width: 18%;
+	height: 200px;
+	padding:10px 25px;
+	border: 8px solid rgb(235, 234, 234);
+}
+
+#imagetext{
+	color: whitesmoke;
+	font-size: large;
+	font-family: system-ui;
+	font-weight: lighter;
+	letter-spacing: 4px;
+}
+
+#deals{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#bot{
+	text-align: center;
+	font-family: system-ui;
+	letter-spacing: 4px;
+	font-weight: lighter;
+}
+#bot h2{
+	font-weight: lighter;
+}
+
+
+table {
+	border-spacing: 20px;
+}
+
+#productName {
+	text-align: center;
+	font-weight: bold;
+}
+
+#productPrice {
+	text-align: center;
+}
+
+.displayCategory ul li {
+	font-size: 20px;
+}
+.homeimage{
+	background-image: url("uploads/img12.png");
+	width: 100%;
+	height: 460px;
+	background-size: cover;
+	background-blend-mode: multiply;
+    background-color:rgba(0, 0, 0, 0.3);
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+#text{
+	margin: auto;
+	height: 60%;
+	width: 80%;
+	border-radius: 12px;
+	background-color: rgb(0, 0, 0, 0.4);
+	margin-top: 120px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	
+	
+}
+#inside{
+	margin-top: 120px;
+	justify-items: center;
+	font-family: system-ui;
+	font-weight: lighter;
+	font-size:xx-large;
+	color: #f5f5f5;
+	letter-spacing: 4px;
+}
+#freeship{
+	background-color: #595959;
+	padding: 0px;
+	margin:0px;
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-family: system-ui;
+	font-weight: lighter;
+	letter-spacing: 6px;
+	color: gainsboro;
+	
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+#about h1  p{
+	font-weight: lighter;
+	font-size: larger;
+	margin-top: 80px;
+	font-family: system-ui;
+}
+#about{
+	text-align: center;
+	color: whitesmoke;
+	display: inline-block;
+}

@@ -1,0 +1,51 @@
+#display {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-color: whitesmoke;
+
+}
+#addtocart{
+	background-color:rgb(76, 184, 43);
+  	color: whitesmoke;
+  	padding: 14px 10px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-family: system-ui;
+  	font-weight: lighter;
+  	width: 150px;
+  	height: 30px;
+
+}
+
+#productImage {
+	height: 250px;
+	width: 200px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	border: 8px solid grey ;
+	
+}
+
+#productDescription {
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: 19px;
+}
+
+#descriptionTable td {
+	width: 150px;
+}
+
+#addToCart {
+	font-size: 20px;
+}
