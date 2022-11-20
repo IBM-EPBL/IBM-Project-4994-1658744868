@@ -1,3 +1,3 @@
 IN CASE OF ANY TECHNICAL ISSUES WITH THE DEMO LINK WHICH WAS UPLOADED FROM GOOGLE DRIVE, USE THIS LINK FOR REFERENCE:
 
-https://screenrec.com/share/ZpF8WoyiXx
+<img width="441" alt="image" src="https://user-images.githubusercontent.com/83458034/202889398-92e756ec-277e-484f-b2c8-745a12d8d36c.png">
